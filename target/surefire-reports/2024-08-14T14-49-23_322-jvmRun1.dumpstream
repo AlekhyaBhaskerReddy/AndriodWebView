@@ -1,0 +1,30 @@
+# Created at 2024-08-14T14:51:22.511
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: EXIT
+java.io.EOFException
+	at org.apache.maven.surefire.api.stream.AbstractStreamDecoder.read(AbstractStreamDecoder.java:506)
+	at org.apache.maven.surefire.api.stream.AbstractStreamDecoder.read(AbstractStreamDecoder.java:473)
+	at org.apache.maven.surefire.api.stream.AbstractStreamDecoder.readMessageType(AbstractStreamDecoder.java:118)
+	at org.apache.maven.surefire.booter.stream.CommandDecoder.decode(CommandDecoder.java:87)
+	at org.apache.maven.surefire.booter.spi.CommandChannelDecoder.decode(CommandChannelDecoder.java:67)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:345)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2024-08-14T14:51:22.513
+Stream closed
+java.io.IOException: Stream closed
+	at java.base/java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:168)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:281)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at org.apache.maven.surefire.api.util.internal.Channels$3.readImpl(Channels.java:217)
+	at org.apache.maven.surefire.api.util.internal.AbstractNoninterruptibleReadableChannel.read(AbstractNoninterruptibleReadableChannel.java:54)
+	at org.apache.maven.surefire.api.stream.AbstractStreamDecoder.read(AbstractStreamDecoder.java:487)
+	at org.apache.maven.surefire.api.stream.AbstractStreamDecoder.read(AbstractStreamDecoder.java:473)
+	at org.apache.maven.surefire.api.stream.AbstractStreamDecoder.readMessageType(AbstractStreamDecoder.java:118)
+	at org.apache.maven.surefire.stream.EventDecoder.decode(EventDecoder.java:155)
+	at org.apache.maven.plugin.surefire.extensions.EventConsumerThread.run(EventConsumerThread.java:73)
+
+

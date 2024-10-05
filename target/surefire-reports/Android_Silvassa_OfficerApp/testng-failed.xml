@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Android_Silvassa_OfficerApp]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.silvassaOfficer.utilities.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Dashboard Test(failed)" verbose="0">
+    <classes>
+      <class name="com.silvassaOfficer.testcases.TC_Dashboard_Occupancy_002">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDownClass"/>
+          <include name="setup1"/>
+          <include name="setup"/>
+          <include name="get_AvgOccupancyData"/>
+          <include name="getResult"/>
+          <include name="continueProcess_DashboardOccupancy"/>
+          <include name="clickon_AvgOccupancy"/>
+          <include name="startTest"/>
+          <include name="tearDownSuite"/>
+        </methods>
+      </class> <!-- com.silvassaOfficer.testcases.TC_Dashboard_Occupancy_002 -->
+    </classes>
+  </test> <!-- Dashboard Test(failed) -->
+</suite> <!-- Failed suite [Android_Silvassa_OfficerApp] -->
